@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Commerce Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our e-Commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="bag.jpg" alt="School bag">
+                    <h3>School Bag</h3>
+                    <p>$19</p>
+                    <button onclick="addToCart('Product 1')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="bottle.jpg" alt="bottle">
+                    <h3>bottle</h3>
+                    <p>$29</p>
+                    <button onclick="addToCart('Product 2')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="laptop.jpg" alt="laptop">
+                    <h3>Laptop</h3>
+                    <p>$39.99</p>
+                    <button onclick="addToCart('Product 3')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="headphone.jpg" alt="headphone">
+                    <h3>headphone</h3>
+                    <p>$15.99</p>
+                    <button onclick="addToCart('Product 4')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="t shirt.jpg" alt="t shirt">
+                    <h3>T shirt</h3>
+                    <p>$10.99</p>
+                    <button onclick="addToCart('Product 5')">Add to Cart</button>
+                </div>
+            </div>
+            <button id="view-cart-button" onclick="viewCart()">View Cart</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a leading e-commerce store providing top quality products at amazing prices. Our mission is to deliver the best shopping experience.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; E-Commerce Store Rajan yadav</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
